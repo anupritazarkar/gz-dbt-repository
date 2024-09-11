@@ -2,6 +2,20 @@ sources:
   - name: raw
     schema: gw_raw_data
     tables:
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: copy  marketing department adwords raw data
+      - name: bing
+        identifier: raw_gz_bing
+        description: copy  marketing department bing raw data  
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: copy  marketing department criteo raw data  
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: copy  marketing department facebook raw data                       
+              
+
       - name: sales
         identifier: raw_gz_sales
         description: sales of greenweez
@@ -90,5 +104,4 @@ models:
         tests:
           - not_null
 
-              
-              
+  
